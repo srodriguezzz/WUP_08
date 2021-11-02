@@ -1,25 +1,26 @@
 ---
 title: "simpleRegress"
-author: "put your name here"
-date: "Fall 2020"
+author: "Sylvia Rodriguez"
+date: "October 26, 2021"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
 
 ## make a simple regression model
 
+
 ```{r}
-bears <- read.csv(file="BEARS.csv",header = TRUE)
+fullup <- lm(LENGTH~ .,data=BEARS)
+summary.lm(fullup)
 ```
+
+
 
 ## Model LENGTH ~ NECK  this is an example  
 
 ```{r}
-simp <- lm(LENGTH~NECK,data=bears)
-plot(LENGTH~NECK,data=bears)
+simp <- lm(LENGTH~NECK,data=BEARS)
+plot(LENGTH~NECK,data=BEARS)
 abline(simp)
 summary.lm(simp)
 ```

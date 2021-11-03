@@ -40,3 +40,5 @@ This chart is a bit harder for me to read and understand, but it seems that this
 
 ## Surely there is another variable that can better predict LENGTH than NECK. Find one and compare its performance to that of neck by it value of Adjusted-Rsquared (bigger is better).
 
+
+I think another variable that can better predict LENGTH than NECK would probably be AGE or SEX. That could determine the "length" of the bears lives which is what I think we are trying to find, rather than the length of their necks. 

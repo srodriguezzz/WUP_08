@@ -41,4 +41,11 @@ This chart is a bit harder for me to read and understand, but it seems that this
 ## Surely there is another variable that can better predict LENGTH than NECK. Find one and compare its performance to that of neck by it value of Adjusted-Rsquared (bigger is better).
 
 
+```{r}
+MODL5 <- lm(Length~ .- Head.W-Weight-Age,data=Bears)
+summary.lm(MODL5)
+```
+
 I think another variable that can better predict LENGTH than NECK would probably be AGE or SEX. That could determine the "length" of the bears lives which is what I think we are trying to find, rather than the length of their necks. 
+
+In conclusion, the graphs/charts above were givin the length of a bears neck, etc. The P value was >2.2e-16 which is very close to zero. 

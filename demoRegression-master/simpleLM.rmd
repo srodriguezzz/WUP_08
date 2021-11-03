@@ -14,7 +14,7 @@ fullup <- lm(LENGTH~ .,data=BEARS)
 summary.lm(fullup)
 ```
 
-
+This chart gives us the residuals and coefficients of all parts, as well as the P value at the end which is < 2.2e-16. Because the formula only called for "length" of bears and not a specific part (e.g. neck, head, etc) we are given the totals of every part.
 
 ## Model LENGTH ~ NECK  this is an example  
 

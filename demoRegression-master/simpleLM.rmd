@@ -25,6 +25,8 @@ abline(simp)
 summary.lm(simp)
 ```
 
+This first model is a much clearer way to see the length of the bears' necks. The length continues to increase in a linear motion. 
+
 ## now predict the length of a bear who has a neck of 17, 22 and 26
 
 
